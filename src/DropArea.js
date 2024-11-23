@@ -18,10 +18,10 @@ const SidebarItem = ({ type, label }) => {
       style={{
         marginTop: "20px",
         border: "1px solid #ccc",
-
+        paddingLeft: "5px",
         backgroundColor: isDragging ? "#f0f0f0" : "#fff",
         cursor: "grab",
-        width: "300px",
+       width: "200px",
         height: "35px",
         display: "flex",
         alignItems: "center",
@@ -207,6 +207,7 @@ const FieldRenderer = ({ type }) => {
     display: "flex",
     alignItems: "center",
     margin: "0px",
+    width: "100%",
     borderBottom: "1px solid rgb(214, 217, 222)",
   };
   
@@ -1652,6 +1653,7 @@ const DropArea = ({ fields, onDrop }) => {
         border: "1px solid #ccc",
         borderRadius: "5px",
         overflow: "auto",
+        width: "auto"
       }}
     >
       {fields.map((field, index) => (
